@@ -6,3 +6,7 @@ function value (phone) {
     return phoneRegex.test(phone)
   }         
 }
+function message (field) {
+  return `The ${field} field must be a valid phone number.`
+}         
+module.exports = { value, message }
